@@ -19,7 +19,7 @@ public class LoginViewModel extends ViewModel {
     }
 
     public MutableLiveData<Integer> busy;
-    public MutableLiveData<Integer> getBusy() {
+    public LiveData<Integer> getBusy() {
         if (busy==null) {
             busy = new MutableLiveData<>();
             busy.setValue(8);
