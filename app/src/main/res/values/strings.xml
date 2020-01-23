@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVVM-Java-Android-LiveData</string>
+    <string name="login_btn">Submit</string>
+</resources>
