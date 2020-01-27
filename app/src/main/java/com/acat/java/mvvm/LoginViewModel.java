@@ -22,13 +22,13 @@ public class LoginViewModel extends ViewModel {
     public LiveData<Integer> getBusy() {
         if (busy==null) {
             busy = new MutableLiveData<>();
-            busy.setValue(8);
+            busy.setValue(8); //8 = View.GONE
         }
         return busy;
     }
 
     private MutableLiveData<User> userMutableLiveData;
-    LiveData<User> getUser() {
+    public LiveData<User> getUser() {
         if (userMutableLiveData==null) {
             userMutableLiveData = new MutableLiveData<>();
         }
